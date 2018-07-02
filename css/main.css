@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   color: #fff;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 body {
@@ -13,7 +20,7 @@ a {
 }
 
 nav {
-  height: 82.25px;
+  height: 81px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -31,7 +38,7 @@ nav, h1, h2, h4 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h3, .about, footer {
+h3, .about, footer, .contact legend, .contact input, .contact textarea, .contact button {
   font-family: 'Lato', sans-serif;
 }
 
@@ -255,7 +262,8 @@ legend {
   height: 185px;
   display: flex;
   border-bottom: 1px solid #E9ECEF;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  padding: 26px 0px;
   resize: none;
   cursor: text;
 }
@@ -267,7 +275,7 @@ legend {
   font-size: 18px;
   font-weight: 500;
   margin: 0px;
-  padding: 10px 13px;
+  padding: 10px 16px;
   letter-spacing: -0.5px;
   cursor: pointer;
 }
@@ -358,5 +366,5 @@ footer p {
 .copyright {
   font-size: 14.5px;
   width: 250px;
-  margin-top: 50px;
+  margin-top: 51px;
 }
